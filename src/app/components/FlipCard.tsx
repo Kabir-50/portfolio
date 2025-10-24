@@ -7,7 +7,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 interface flipcard {
   title: string,
   detail: string[],
-  image: string,
+  image?: string,
 }
 const FlipCard = ({ title, detail, image}: flipcard) => {
 

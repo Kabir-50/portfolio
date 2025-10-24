@@ -4,7 +4,7 @@ import NavList from './NavList'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid'
 import { useState } from 'react'
 import MobNav from './MobNav'
-import Link from 'next/dist/client/link'
+import Link from 'next/link'
 import { useEffect } from 'react'
 
 
@@ -33,7 +33,7 @@ const Navbar = () => {
     
 
 
-      useEffect(() => {
+    useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 0) 
                 setScrolled(true)
@@ -56,6 +56,7 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll)
         handleScroll()
         return () => window.removeEventListener('scroll', handleScroll)
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 
