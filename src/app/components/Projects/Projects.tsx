@@ -10,8 +10,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Projects = () => {
   
-  const title1 = useRef(null)
-  const title2 = useRef(null)
+  const title1 = useRef<HTMLHeadingElement | null>(null);
+  const title2 = useRef<HTMLHeadingElement | null>(null);
 
   useGSAP(() =>{
     gsap.from(title1.current, {

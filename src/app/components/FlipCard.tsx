@@ -4,8 +4,12 @@ import { BorderBeam } from "@/components/ui/border-beam"
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
-
-const FlipCard = ({ title, detail, image}) => {
+interface flipcard {
+  title: string,
+  detail: string[],
+  image: string,
+}
+const FlipCard = ({ title, detail, image}: flipcard) => {
 
     const [isFlipped, setisFlipped] = useState(false)
     const cardref = useRef(null);

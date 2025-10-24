@@ -1,8 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
+interface navlist {
+  name: string,
+  link: string,
+  active: boolean,
+}
 
-const NavList = ({ name, link, active }) => {
+const NavList = ({ name, link, active }: navlist) => {
 
   return (
     <>

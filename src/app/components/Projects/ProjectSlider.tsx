@@ -1,17 +1,29 @@
 'use client'
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
+import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 // Swiper styles import karen
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 import Cards from '../Cards';
 import './swiper.css'
 
-const ProjectSlider = ({ projects }) => {
+interface Project {
+  projectNum: string;
+  title: string;
+  detail: string;
+  image: string;
+  gitHub: string;
+}
+
+interface projectSliderProps {
+  projects: Project[]
+}
+
+const ProjectSlider = ({ projects }: projectSliderProps) => {
   return (
     <div className="container">
       <Swiper

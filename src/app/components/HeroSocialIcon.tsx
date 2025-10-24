@@ -1,7 +1,14 @@
 import Link from 'next/link'
 import React from 'react'
 
-const HeroSocialIcon = ({ link, icon, name, download }) => {
+interface heroIcons {
+  link: string,
+  icon: React.ReactNode,
+  name: string,
+  download?: boolean,
+}
+
+const HeroSocialIcon = ({ link, icon, name, download }: heroIcons) => {
   return (
     <div className="relative flex items-center">
       <div className="group relative flex items-center">

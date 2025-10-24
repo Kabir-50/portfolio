@@ -9,7 +9,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 gsap.registerPlugin(ScrollTrigger)
 
-const Cards = ({ title, detail, image, projectNum, gitHub }) => {
+interface CardsProps {
+  title: string;
+  detail: string;
+  image: string;
+  projectNum: string;
+  gitHub: string;
+}
+
+const Cards = ({ title, detail, image, projectNum, gitHub }: CardsProps) => {
 
   const [isHover, setisHover] = useState(false)
 
