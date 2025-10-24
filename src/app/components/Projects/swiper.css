@@ -1,0 +1,48 @@
+/* globals.css ya component CSS file mein */
+
+.mySwiper .swiper-slide {
+  width: 350px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+/* Active/Center slide - clear rahega */
+.mySwiper .swiper-slide-active {
+  filter: blur(0px); 
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Previous/Next slides - thoda blur */
+.mySwiper .swiper-slide-prev,
+.mySwiper .swiper-slide-next {
+  filter: blur(2px);
+  opacity: 0.7;
+}
+
+/* Baaki saare slides - zyada blur */
+.mySwiper .swiper-slide:not(.swiper-slide-active):not(.swiper-slide-prev):not(.swiper-slide-next) {
+  filter: blur(5px);
+  opacity: 0.4;
+}
+
+@media (width < 40rem) {
+    .mySwiper .swiper-slide {
+        width: 250px;
+    }
+}
+@media (width >= 40rem) {
+    .mySwiper .swiper-slide {
+        width: 257px;
+    }
+}
+@media (width >= 48rem) {
+    .mySwiper .swiper-slide {
+        width: 300px;
+    }
+}
+@media (width >= 64rem) {
+    .mySwiper .swiper-slide {
+        width: 350px;
+    }
+}
