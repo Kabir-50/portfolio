@@ -1,7 +1,12 @@
 import React from 'react'
 import NavList from './NavList'
 
-const MobNav = ({ links, activeSection  }) => {
+interface mobnav {
+  links: { name: string; link: string }[],
+  activeSection: string
+}
+
+const MobNav = ({ links, activeSection  }: mobnav) => {
   return (
     <>
       <div className=" p-4 flex justify-center text-white md:hidden">
