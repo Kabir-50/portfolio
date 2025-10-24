@@ -5,7 +5,6 @@ import Image from 'next/image'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import {IconBrandGithubFilled, IconBrandLinkedinFilled, IconFileCvFilled} from '@tabler/icons-react';
-import Link from 'next/link'
 import HeroSocialIcon from './HeroSocialIcon'
 import Tilt from 'react-parallax-tilt';
 
@@ -144,7 +143,7 @@ const HeroSec = () => {
         <div className="hero-wrapper h-screen flex flex-col justify-center bg-hero-pattern md:flex-row md:items-center md:w-[100%]">
           
           <div ref={leftRef} className="hero-left pl-6 sm:pl-6 md:w-[30%] md:flex md:flex-col md:items-end lg:w-[40%]">
-            <h3 className='text-[#8830da] font-bold sm:text-2xl lg:text-[1.7rem]'>Hello, I'm</h3>
+            <h3 className='text-[#8830da] font-bold sm:text-2xl lg:text-[1.7rem]'>Hello, I&apos;m</h3>
             <h2 className="hero-name text-5xl font-bold text-white lg:text-[3.5rem]"><i>Kabir<br/>Sheikh</i></h2>
           </div>
           <div ref={centerRef} className="overflow-hidden">
