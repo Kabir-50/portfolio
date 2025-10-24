@@ -156,7 +156,7 @@ const HeroSec = () => {
             >
               <div className="relative hero-center pt-4 self-center">
                 <Image
-                  src="/images/kabeer2.png"
+                  src="/images/animated boy bg.png"
                   alt="Kabir Sheikh"
                   width={800}
                   height={200}
