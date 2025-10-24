@@ -1,26 +1,28 @@
 'use client'
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import Lenis from 'lenis'
-import 'lenis/dist/lenis.css'
 
 const WebScroller = ({ children }: { children: React.ReactNode }) => {
+  const reqIdRef = useRef<number>(0)
+
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-      smooth: true,
-      direction: 'vertical',
-      smoothTouch: false, // Mobile pe battery bachane ke liye
+      orientation: 'vertical',
     })
 
     function raf(time: number) {
       lenis.raf(time)
-      requestAnimationFrame(raf)
+      reqIdRef.current = requestAnimationFrame(raf)
     }
 
-    requestAnimationFrame(raf)
+    reqIdRef.current = requestAnimationFrame(raf)
 
     return () => {
+      if (reqIdRef.current) {
+        cancelAnimationFrame(reqIdRef.current)
+      }
       lenis.destroy()
     }
   }, [])
