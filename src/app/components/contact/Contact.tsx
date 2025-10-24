@@ -21,7 +21,7 @@ interface FormData {
 const Contact: React.FC = () => {
   const title1 = useRef<HTMLHeadingElement | null>(null)
   const title2 = useRef<HTMLHeadingElement | null>(null)
-  const form = useRef<HTMLFormElement | null>(null)
+  const form = useRef<HTMLDivElement>(null)
   const earth = useRef<HTMLDivElement | null>(null)
 
   useGSAP(() => {
