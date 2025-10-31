@@ -125,7 +125,7 @@ const HeroSec = () => {
         },
         {
           name: "Resume",
-          link: "document/Mr_Kabeer_Resume.docx",
+          link: "document/M_Kabeer_Resume.pdf",
           icon: <IconFileCvFilled className='size-7 sm:size-8 lg:size-10'/>,
           download: true,
         },
