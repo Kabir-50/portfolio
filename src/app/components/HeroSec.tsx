@@ -120,12 +120,12 @@ const HeroSec = () => {
         },
         {
           name: "LinkedIn",
-          link: "https://www.linkedin.com/in/muhammad-kabeer-46992436b/",
+          link: "https://www.linkedin.com/in/mkabeerdev/",
           icon: <IconBrandLinkedinFilled className='size-7 sm:size-8 lg:size-10'/>
         },
         {
           name: "Resume",
-          link: "document/M_Kabeer_Resume.pdf",
+          link: "document/Kabeer_CV.pdf",
           icon: <IconFileCvFilled className='size-7 sm:size-8 lg:size-10'/>,
           download: true,
         },

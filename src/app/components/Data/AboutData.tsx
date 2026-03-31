@@ -17,8 +17,8 @@ export const CardData = [
       detail: [
         'PHP & Laravel',
         'Python & Django',
-        'REST APIs',
-        'MySQL Database',
+        'Node.js & Express.js',
+        'MySQL & MongoDB Database',
         'jQuery',
         'Server Management'
       ]

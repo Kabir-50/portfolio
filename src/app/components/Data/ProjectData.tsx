@@ -15,17 +15,17 @@ export const ProjectData = [
   },
   {
     projectNum: "03",
-    title: "Contact App",
-    detail: "A contact management app built with React and Firebase for CRUD operations, real-time sync and interactiveness",
-    image: "/images/contact-app.jpeg",
-    gitHub: "https://github.com/Kabir-50/Contact-app"
+    title: "AI Second Brain",
+    detail: "MERN + RAG pipeline app — talk to your documents using Google Gemini embeddings and ChromaDB.",
+    image: "/images/ai second brain.png",
+    gitHub: "https://github.com/Kabir-50/ai-second-brain"
   },
   {
     projectNum: "04",
-    title: "Food Zone",
-    detail: "A responsive food search app where users filter dishes by Breakfast, Lunch, or Dinner categories.",
-    image: "/images/food.jpg",
-    gitHub: "https://github.com/Kabir-50/food-zone"
+    title: "Contact App",
+    detail: "MERN + RAG pipeline app — talk to your documents using Google Gemini embeddings and ChromaDB.",
+    image: "/images/contact-app.jpeg",
+    gitHub: "https://github.com/Kabir-50/Contact-app"
   },
   {
     projectNum: "05",
